@@ -178,4 +178,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/node,linux,windows,vscode
-n
+lib
+packages/client/types
