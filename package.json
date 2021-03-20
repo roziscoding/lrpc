@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint packages/**/src/**/*.ts",
-    "release": "lerna publish --conventional-commits"
+    "release": "npm run lint && lerna publish --conventional-commits --no-commit-hooks"
   },
   "keywords": [],
   "author": "Roz <roz@rjmunhoz.me> (https://about.rjmunhoz.me/)",
