@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint packages/**/src/**/*.ts"
+    "lint": "eslint packages/**/src/**/*.ts",
+    "release": "lerna publish --conventional-commits"
   },
   "keywords": [],
   "author": "Roz <roz@rjmunhoz.me> (https://about.rjmunhoz.me/)",
