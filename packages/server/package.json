@@ -1,5 +1,5 @@
 {
-  "name": "lrpc-server",
+  "name": "@lrpc/server",
   "version": "0.0.1",
   "description": "lRPC server package",
   "main": "lib/index.js",
