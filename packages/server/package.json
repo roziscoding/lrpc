@@ -8,7 +8,7 @@
     "build": "tsc",
     "clean": "rm -rf lib tsconfig.tsbuildinfo",
     "build:clean": "npm run clean && npm run build",
-    "prepare": "npm run build:clean"
+    "prepublishOnly": "npm run build:clean"
 
   },
   "keywords": [

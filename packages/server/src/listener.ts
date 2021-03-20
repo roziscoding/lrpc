@@ -9,13 +9,13 @@ const packageJson = require(path.join(__dirname, '..', 'package'))
 const getHandshake = (userHandlers?: Handlers) => (): Result<{
   protocol: string
   version: string
-  supportedMethods?: string[]
+  operations?: string[]
 }> => ({
   ok: true,
   data: {
     protocol: 'lrpc',
     version: packageJson.version,
-    supportedMethods: Object.keys(userHandlers || {})
+    operations: Object.keys(userHandlers || {})
   }
 })
 
