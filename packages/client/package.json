@@ -21,7 +21,7 @@
     "build:clean": "npm run clean && npm run build",
     "build": "npm run version && rollup --config ./rollup.config.js",
     "prepublishOnly": "npm run build:clean",
-    "version": "FILE=\"src/index.ts\"; if [ \"$(git status --porcelain | grep \"^ M \"$FILE)\" = \"\" ]; then VERSION=$(node -p \"require('./package.json').version\") && sed \"s/VERSION = '\\([0-9]*\\.[0-9]*\\.[0-9]*\\)'/VERSION = '\"$VERSION\"'/\" $FILE > .tmp.ts && mv .tmp.ts $FILE && git add $FILE; fi"
+    "version": "FILE=\"src/index.ts\"; if [ \"$(git status --porcelain | grep \"^ M \"$FILE)\" = \"\" ]; then VERSION=$(node -p \"require('./package.json').version\") && sed \"s/VERSION = '\\([0-9]*\\.[0-9]*\\.[0-9]*\\)'/VERSION = '\"$VERSION\"'/\" $FILE > .tmp.ts && mv .tmp.ts $FILE; fi"
   },
   "repository": {
     "type": "git",
