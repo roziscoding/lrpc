@@ -1,0 +1,29 @@
+{
+  "name": "lrpc-server",
+  "version": "0.0.1",
+  "description": "lRPC server package",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "clean": "rm -rf lib tsconfig.tsbuildinfo",
+    "build:clean": "npm run clean && npm run build",
+    "prepare": "npm run build:clean"
+
+  },
+  "keywords": [
+    "lrpc",
+    "server",
+    "remote",
+    "procedure",
+    "call"
+  ],
+  "author": "Roz <roz@rjmunhoz.me> (https://about.rjmunhoz.me/)",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/node": "^14.14.35",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.3"
+  },
+  "files": ["lib"]
+}
