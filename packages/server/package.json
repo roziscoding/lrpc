@@ -1,6 +1,6 @@
 {
   "name": "@lrpc/server",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "lRPC server package",
   "main": "lib/index.js",
   "scripts": {
@@ -9,7 +9,6 @@
     "clean": "rm -rf lib tsconfig.tsbuildinfo",
     "build:clean": "npm run clean && npm run build",
     "prepublishOnly": "npm run build:clean"
-
   },
   "keywords": [
     "lrpc",
@@ -25,5 +24,7 @@
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.2.3"
   },
-  "files": ["lib"]
+  "files": [
+    "lib"
+  ]
 }
