@@ -28,7 +28,7 @@ const server = createServer({
   greet: ({ name }: { name: string }) => ({
     ok: true,
     data: {
-      greeting: `Hello, ${name}`!
+      greeting: `Hello, ${name}!`
     }
   })
 })
