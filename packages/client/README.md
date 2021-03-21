@@ -33,9 +33,20 @@ This module has an UMD bundle available through JSDelivr and Unpkg CDNs.
 </script>
 ```
 
-## Documentation
+## Usage
 
-[Documentation generated from source files by Typedoc](./docs/README.md).
+This package exports an async function `createClient`, which accepts the URL of your API and provides you with a javascript Proxy object that will convert your function calls into RPCs.
+
+```typescript
+async main () {
+  const client = await createClient('http://localhost:3000') // This calls a handshake function on the server
+
+  const { greeting } = client.greet({ name: 'John' }) // 'Hello, John'
+}
+
+main()
+  .catch(console.error)
+```
 
 ## License
 
