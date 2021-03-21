@@ -45,3 +45,7 @@ After that, your server is listening on port 3000, and is ready to be consumed b
 There are no automated testes yet, so that's the main contribution I'm looking for, right now, but every contribution is welcome.
 
 Just fork this repo, make sure ESlint and Commitlint are happy with your code and commits, and PR 😄
+
+## lRPC
+
+lRPC stands for light Remote Procedure Calls. The idea for this came from [a tweet](https://twitter.com/gustavo_pch/status/1369419853958889475?s=20).
